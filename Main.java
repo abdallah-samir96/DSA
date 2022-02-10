@@ -5,10 +5,11 @@ public static void main(String [] args){
   
   x = y = z = 100;
   
-  BufferedReader b = new BufferedReader(new InputStreamReader(System.in));
+  //BufferedReader b = new BufferedReader(new InputStreamReader(System.in));
   
-  x = b.readInt();
+  //x = b.readInt();
   
+  System.out.println("Gang Of Four");
 
 }
 
