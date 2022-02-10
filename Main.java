@@ -1,23 +1,5 @@
 public class Main{
 public static void main(String [] args){
-
-  int x , y , z;
-  
-  x = y = z = 100;
-  
-  //BufferedReader b = new BufferedReader(new InputStreamReader(System.in));
-  
-  //x = b.readInt();
-  
-<<<<<<< HEAD
-  // Commented By abdallah
-=======
-  System.out.println("Gang Of Four");
->>>>>>> 5ba3f2557b585959ddc1badf9d4e05652226e2d0
-
-
-// Abdallah Samir Elsayed
-
+System.out.println("Hossam");
 }
-
 }
