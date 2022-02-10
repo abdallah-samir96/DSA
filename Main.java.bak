@@ -15,9 +15,6 @@ public static void main(String [] args){
   System.out.println("Gang Of Four");
 >>>>>>> 5ba3f2557b585959ddc1badf9d4e05652226e2d0
 
-
-// Abdallah Samir Elsayed
-
 }
 
 }
