@@ -1,0 +1,9 @@
+- All needed space is
+      * Instructions space
+      * Data Space
+      * Call Stack (Stack frame)
+
+- Arrays is a pointer(reference) refer to the first element in the memory
+- The component that is responsible for reserving memory is the Runtime(JVM in java, Runtime in C, C++)
+- All sizes of types in c is depend on the architecture itself.
+
