@@ -1,0 +1,7 @@
+- Stack is linear and non-primitive data type.
+- Stack is Ordered List each element has its Order.
+- LIFO -> Last Input First Output.
+
+
+- methods calls are inserted into stack ds.
+-
