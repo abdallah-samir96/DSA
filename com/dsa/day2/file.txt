@@ -1,7 +1,12 @@
 - Stack is linear and non-primitive data type.
 - Stack is Ordered List each element has its Order.
 - LIFO -> Last Input First Output.
-
+- Stack In java extends Vector class which implement List interface
+- to use push, pop, peek methods, we should create then reference from Stack class.
 
 - methods calls are inserted into stack ds.
--
+- Arithmetic operation evaluation.
+- Balanced Text, Braces
+
+- Dequeue is DS to add from anywhere and remove from anywhere.
+- Dequeue is interface that extends Queue interface.
