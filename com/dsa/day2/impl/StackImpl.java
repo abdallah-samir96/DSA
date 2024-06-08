@@ -5,7 +5,7 @@ public class StackImpl<E> {
     private final Object[] stack;
 
     public StackImpl() {
-        this(10);
+        this(5);
     }
     public StackImpl(int capacity) {
         if(capacity <= 0) {
@@ -16,10 +16,10 @@ public class StackImpl<E> {
     }
 
     public void push(E element) {
-        top ++;
-        if (top > this.stack.length - 1) {
+        if (top == this.stack.length - 1) {
             throw new RuntimeException("could not push to stack as the top is " + top + " And the size of stack is " + stack.length);
         }
+        top ++;
         this.stack[this.top] = element;
     }
 

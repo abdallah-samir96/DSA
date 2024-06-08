@@ -14,7 +14,7 @@ public class App {
         stackImpl.push(200);
         stackImpl.push(700);
         stackImpl.push(800);
-        stackImpl.push(900);
+        stackImpl.push(800);
         stackImpl.pop();
         stackImpl.pop();
         System.out.println("Value on Top of Stack " + stackImpl.peek());
