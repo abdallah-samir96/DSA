@@ -7,6 +7,8 @@
 - methods calls are inserted into stack ds.
 - Arithmetic operation evaluation.
 - Balanced Text, Braces
+- Undo/Redo Operations
+- Browser History
 
 - Dequeue is DS to add from anywhere and remove from anywhere.
 - Dequeue is interface that extends Queue interface.

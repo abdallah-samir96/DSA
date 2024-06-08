@@ -5,7 +5,7 @@ public class StackImpl<E> {
     private final Object[] stack;
 
     public StackImpl() {
-        this(5);
+        this(10);
     }
     public StackImpl(int capacity) {
         if(capacity <= 0) {
@@ -47,5 +47,12 @@ public class StackImpl<E> {
                 System.out.print(stack[i]);
         }
 
+    }
+
+    public boolean isFull() {
+        return top == this.stack.length - 1;
+    }
+    public boolean isEmpty() {
+        return this.top == -1;
     }
 }
