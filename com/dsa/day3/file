@@ -1,0 +1,9 @@
+- Queue is linear and homogeneous collection of element.
+- you need to shift all items once you made dequeue of element.
+- the operations is enqueue and dequeue.
+- we can use circular queue to not shift the items and hear we need 2 pointers.
+- Applications of queue
+    - Job Scheduling
+    - Buffering
+    - Message Queues
+    - Task Management
