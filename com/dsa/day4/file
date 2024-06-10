@@ -1,0 +1,16 @@
+- List, LinkedList.
+- Adding and Deleting from anywhere.
+- List is resized, can modified any time.
+- Array is continuous locations in memory.
+- LinkedList is a list with linked items.
+- linear data structure consisting of nodes connected to each other.
+- Data, Link to the next node.
+- LinkedList contains head that point to the first element in the list.
+- the last element in the list should be refer to null.
+- its dynamic data structure without any limit and not continuous locations.
+- efficient memory utilization, there is no reserved locations.
+- problems of it (contains info about the next item, need more memory locations)
+
+Applications On LinkedList
+- Music or Video Playlist you can relate the videos with next and previous.
+- Can used to implement the stack and queue, because of it's flexibility.
