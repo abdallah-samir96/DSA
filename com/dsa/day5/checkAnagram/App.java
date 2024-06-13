@@ -1,8 +1,11 @@
 package com.dsa.day5.checkAnagram;
 
+import java.util.Arrays;
+
 public class App {
     public static void main(String[] args) {
-        System.out.println(checkAnagram("abd", "cba"));
+        System.out.println(checkAnagram("abd", "dba"));
+        System.out.println(isAnagram("abc", "bba"));
     }
     private static boolean checkAnagram(String first, String second) {
         if(first.length() != second.length()) {
@@ -16,5 +19,30 @@ public class App {
             secondCodes += second.codePointAt(i);
         }
         return firstCodes == secondCodes;
+    }
+    /**
+     * Another solution
+     * to be anagram, the array should only contain zero's values
+     * All String should be in uppercase, lowercase
+     * */
+    private static boolean isAnagram(String first, String second) {
+        if(first.length() != second.length()) {
+            return false;
+        }
+        // all characters is 26
+        int[] balance = new int[26];
+        for(int i = 0; i < first.length(); ++i) {
+            // here we just increase the 0 value or decrease it
+            balance[first.charAt(i) % 26]++;
+            balance[second.charAt(i) % 26]--;
+        }
+        System.out.println(Arrays.toString(balance));
+        // here if it's anagram, the array should only have the zero's values
+        for (int i : balance) {
+            if (i != 0) {
+                return false;
+            }
+        }
+        return true;
     }
 }
