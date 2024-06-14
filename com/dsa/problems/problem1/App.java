@@ -1,4 +1,4 @@
-package com.dsa.problems;
+package com.dsa.problems.problem1;
 
 public class App {
     public static void main(String[] args) {

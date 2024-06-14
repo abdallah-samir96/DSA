@@ -1,0 +1,29 @@
+Trees
+  - Non linear ADT(Abstract Data structure).
+  - We can use it to represent the Folder structure.
+  - It contains a number of Nodes.
+  - The tree may be empty or contains one or more Node.
+  - i have meeting in the office director now, will finish it and call you.
+
+
+- trees are used in compiler expressions.
+- Tree Components
+    - Root
+    - Nodes
+    - Edge
+    - Leaf
+    - Subtrees
+    - Sibling 2 nodes on the same level and have the same parent
+    - Path a sequence of edges.
+    - Size number of nodes in the tree
+    - Depth is the number of edges from the node to the root.
+
+- Binary tree is a tree wih 2 nodes only in each branch.
+- No more than 2 Nodes in each Node
+
+- How to Traverse Tree
+    - pre-order  -> Root then Left, Right
+    - in-order   -> Left subtree, then root node, then  right sub-tree
+    - post-order -> Left subtree, Right sub-tree, Root Node.
+
+- All arithmetic operations are evaluated in-order.

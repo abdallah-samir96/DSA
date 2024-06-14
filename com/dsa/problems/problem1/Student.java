@@ -1,4 +1,4 @@
-package com.dsa.problems;
+package com.dsa.problems.problem1;
 
 import java.util.Arrays;
 import java.util.OptionalInt;
