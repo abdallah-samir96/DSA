@@ -1,0 +1,96 @@
+******* Apache Maven ********
+
+- Write code, Compile code, running test, packaging, deployment.
+- we can make javadoc in the lifecycle of build.
+
+- Ant (2000), Maven(2004), Gradle(2007).
+- js NPM
+- C# Naget
+- C++ CMake
+- Java Maven, Gradle, ANT
+***********************************************
+- Maven is written using Java.
+- Maven is project management and comprehension tool that simplifies building, testing, reporting
+, packaging of projects based on the concept of project object model(POM).
+- Maven as word mean "Accumulator of knowledge"
+- current version of Maven is 3.x and found at 2010.
+
+**********************************************
+- Why maven is so popular
+* Standard directory structure.
+* Declarative dependency management
+* Convention over configuration
+* Plugin based architecture
+* Open source
+* Archetypes (project skeleton)
+* Tools support (All editors and IDE support maven)
+* Site documentation.
+
+**********************************************
+* Gradle used the Dependencies from maven repository
+* Java, Maven should have the same version of Java
+
+** Directory structure of maven installation
+- bin containing the binaries such as mvn command, so on.
+- boot contains the plexus lib for creating and executing projects(class loaders).
+- conf contains the configuration files.
+- lib   contains the libraries maven depend on.
+***********************************************
+((Introducing maven, apache maven cookbook))
+- group Id   -> reversed domain name.
+- artifactID -> the project name.
+
+************************************************
+<modelVersion>4.0.0</modelVersion>   -> this is the version of POM itself.
+
+**************************************************
+Jar file naming conventions
+*Informative*-*name*-*M*.*m*.*b*.jar
+M = major version number (changed when backward compatibility is not necessarily maintained)
+m = minor version number (feature additions etc)
+b = build number (for releases containing bug fixes)
+
+***************************************************
+Project Directory Structure
+my-project
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── (source code files)
+│   │   ├── resources
+│   │   │   └── (resource files)
+│   │   └── webapp (for web applications)
+│   │       └── (web application files)
+│   └── test
+│       ├── java
+│       │   └── (test source code files)
+│       └── resources
+│           └── (test resource files)
+├── target
+│   └── (compiled output and build artifacts)
+├── pom.xml (project configuration file)
+└── other project files and directories
+
+********************************************************
+.jar, .ear, .war and so on is a zip format file in one place to be easy in deployment.
+- POM (project object model) is central piece of information
+- The minimum requirement for a POM contains
+    - project         the root element
+    - modelVersion    the version of pom file
+    - groupId         the organization for the project
+    - artifactId      the project name
+    - version         version of the project
+- versioning
+    <major-version>.<minor-version>.<incremental-version>-qualifier
+    - major-version -> breaking changes,
+    - qualifier may be (RC, alpha, beta, SNAPSHOT)
+    - SNAPSHOT means under development not production.
+    - here the SNAPSHOT dependencies will be fetch every time
+
+****************************************************************
+POM           -> the pom file
+Super POM     -> maven default pom file, each pom extends from the super pom
+effective pom -> is the result of merging POM, Super POM
+
+mvn help:effective-pom will get the effective pom.
+
