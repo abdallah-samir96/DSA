@@ -22,8 +22,8 @@ Trees
 - No more than 2 Nodes in each Node
 
 - How to Traverse Tree
-    - pre-order  -> Root then Left, Right
-    - in-order   -> Left subtree, then root node, then  right sub-tree
+    - pre-order  -> Root Node then Left sub-tree, Right sub-tree
+    - in-order   -> Left subtree, then root node, then right sub-tree
     - post-order -> Left subtree, Right sub-tree, Root Node.
 
 - All arithmetic operations are evaluated in-order.
