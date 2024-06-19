@@ -1,0 +1,76 @@
+***********************************************
+- Lifecycle contains a group of phases.
+- Plugin is a group of Goals
+- Maven not execute the phases, only execute the Goals associated to the phases.
+- mvn phase-one here maven will execute all goals associated to this phase.
+- phases are ordered so if you run phase5, here all phases before phase 5 will be run first.
+- Maven only run the goals inside the plugins.
+- Goals is the Task.
+
+- Clean, Default, Site are a lifecycle.
+Lifecycle
+|-- clean
+|   |-- clean:clean
+|
+|-- default
+|   |-- validate
+|   |   |-- validate:validate
+|   |
+|   |-- compile
+|   |   |-- compiler:compile
+|   |
+|   |-- test
+|   |   |-- surefire:test
+|   |
+|   |-- package
+|   |   |-- jar:jar
+|   |
+|   |-- verify
+|   |   |-- ...
+|   |
+|   |-- install
+|   |   |-- install:install
+|   |
+|   |-- deploy
+|       |-- deploy:deploy
+|
+|-- site
+    |-- site:site
+****************************************************************
+****************************************************************
+- Maven contains 3 main lifecycles
+    - clean    -> for deleting the target file from the working directory
+    - default  -> for compiling, packaging, deploying
+    - site     -> generate documentation and its site generation(such as maven site)
+
+
+- we have only 3 lifecycle in Maven
+** Clean lifecycle
+    - pre-clean        mvn pre-clean
+    - clean            mvn clean(this is phase) or mvn clean:clean(this is the goal on clean plugin)
+    - post-clean       mvn post-clean
+** most of maven plugins has help goal     mvn clean:help
+
+** Site lifecycle
+    - pre-site
+    - site          mvn site = mvn site:site   the site phase is associated to the site goal in the site plugin
+    - post-site
+    - site-deploy   mvn site-deploy = mvn site:deploy
+
+- we have 23 phase in the default lifecycle, but only we used the most common used which are 6 phases.
+** Default lifecycle
+    - validate      -> dependencies are downloaded correctly, available
+    - compile       -> compile the java code
+    - test          -> run the unit testing (we can test the project before packaging)
+    - package       -> package file
+    - install       -> install the jar file into the local repository
+    - deploy        -> deploy the jar, war, ear, rar, ejb into the web server, or to remote repository
+
+
+** mvn compiler:help to display the help of this plugin
+** we only run goals or phases
+** mvn help:describe -Dcmd=compile here will display the lifecycle and associated goals.
+
+**********************************************************************************************************
+**********************************************************************************************************
+Maven Archetypes
