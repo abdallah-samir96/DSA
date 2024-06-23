@@ -3,13 +3,12 @@ package com.dsa.day5.factorial;
 public class App {
     public static void main(String[] args) {
         long start1 = System.currentTimeMillis();
-        System.out.println(start1);
         fact(12000);
         long end1 = System.currentTimeMillis();
-        System.out.println(end1);
         System.out.println(end1 - start1);
         long start2 = System.currentTimeMillis();
-        factorial(50000);
+        long factResult = factorial(50000);
+        System.out.println(factResult);
         long end2 = System.currentTimeMillis();
         System.out.println(end2 - start2);
     }
@@ -19,7 +18,6 @@ public class App {
         }
         if(n == 0 || n == 1)
             return 1;
-
         return n * fact(n-1);
     }
 
