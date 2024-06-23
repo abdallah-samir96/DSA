@@ -4,8 +4,10 @@ import java.util.Arrays;
 
 public class App {
     public static void main(String[] args) {
+
         System.out.println(checkAnagram("abd", "dba"));
         System.out.println(isAnagram("abc", "bba"));
+
     }
     private static boolean checkAnagram(String first, String second) {
         if(first.length() != second.length()) {

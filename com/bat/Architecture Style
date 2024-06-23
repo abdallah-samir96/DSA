@@ -1,0 +1,24 @@
+********************************************************************************************
+********************************************************************************************
+- 2 tier system ((Backend, Front-end) this is stand alone application).
+- 3 tiers (Server, UI, Database).
+- n tiers.
+- if we have no network, we will have not distributed systems.
+- Software Architecture Style
+    - Monolithic -> Ball of Mud, Run as A single unit
+    - Service Oriented Architecture (Separate the components, Loosely coupled Services)
+    - MicroServices comes from the SAO(Fully independent Services (build on application scope)).
+
+- Service Oriented Architecture
+        - Services are communicate using ESB(Enterprise service bus), but may have the same db
+        - Loose Coupling, little dependency,
+        - An enterprise service bus (ESB) is software that you can use when communicating with a system that has multiple services.
+        - Problems of It single point of failure in ESB(centralized service).
+
+- Main Components in SOA are
+    - Service
+    - Provider
+    - Consumer
+    - Service Registry(ESB Enterprise Service Bus)
+    - Microservices architecture is an evolution of the SOA architectural style.
+***********************************************************************************************
