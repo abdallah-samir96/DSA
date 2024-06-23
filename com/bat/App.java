@@ -6,9 +6,8 @@ public class App{
     public static void main(String[] args) {
         System.out.println(FileSystems.getDefault().getSeparator());
         System.out.println(System.getProperty("file.separator"));
+        System.out.println(System.getProperty("java.version", "21"));
         System.out.println("*******************************************");
-        System.getProperties().forEach((k,v) -> {
-            System.out.println(k + " = " + v);
-        });
+        System.getProperties().forEach((k,v) -> System.out.println(k + " = " + v));
     }
 }

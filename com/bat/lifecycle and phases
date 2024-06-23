@@ -5,7 +5,7 @@
 - mvn phase-one here maven will execute all goals associated to this phase.
 - phases are ordered so if you run phase5, here all phases before phase 5 will be run first.
 - Maven only run the goals inside the plugins.
-- Goals is the Task.
+- Goals is the Task we want to execute.
 
 - Clean, Default, Site are a lifecycle.
 Lifecycle
@@ -75,8 +75,18 @@ Lifecycle
 **********************************************************************************************************
 Maven Archetypes
 - we have a lot of ready archetypes we can generate using the command line.
-
-
+- open source communities provide millions on archetypes.
+- for example RedHat has its own archetypes, so you can work on the structure of them.
+- Maven Archetypes is a project template.
+- mvn archetype:generate
+        -DgroupId= com.iti
+        -DartifactId= simple
+        -Dversion = 1.0
+        -DarchetypeArtifactId = maven-archetype-quickstart
+        -DarchectypeVersion = 1.4
+        -DinteractiveMode = false
+- we have a lot of archetypes using DarchetypeArtifactId such (maven-archetype-quickstart, maven-archetype-webapp)
+- the package name will be the same as the groupId
+- Creating project manually is a tedious Task.
 **********************************************************************************************
-
-
+- Software Architecture Style
