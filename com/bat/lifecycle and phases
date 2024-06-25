@@ -6,12 +6,23 @@
 - phases are ordered so if you run phase5, here all phases before phase 5 will be run first.
 - Maven only run the goals inside the plugins.
 - Goals is the Task we want to execute.
-
+- Maven could Run Goal that not associated with Phases.
+- In maven we only call Phases or Goals.
+- We can create our own lifecycle and Plugins with our goals.
+- We can work with 3d party plugin and associate it with specific phase.
+- Most of Plugin has a help clean.
+- Name of phases are unique across the whole lifecycle.
+- To test the App, we did not need to package the code.
+- All packaging format are Zip files, with different file structure.
+- Install phase -> will install the archive file into the local repository.
+- Deploy phase  -> will deploy the project to remote repos (for example)
+- Default lifecycle contains 23 phase include(install, verify, integration-test, compile, initialize).
+- Default life cycle binding differ based on packaging types(jar, war, ear, ejb)
 - Clean, Default, Site are a lifecycle.
 Lifecycle
 |-- clean
 |   |-- clean:clean
-|
+
 |-- default
 |   |-- validate
 |   |   |-- validate:validate
@@ -33,7 +44,8 @@ Lifecycle
 |   |
 |   |-- deploy
 |       |-- deploy:deploy
-|
+
+
 |-- site
     |-- site:site
 ****************************************************************
@@ -70,6 +82,13 @@ Lifecycle
 ** mvn compiler:help to display the help of this plugin
 ** we only run goals or phases
 ** mvn help:describe -Dcmd=compile here will display the lifecycle and associated goals.
+** we have 3 separated lifecycle (clean, site, default)
+** mvn compiler:help to get the help of compiler plugin.
+** how to know phases and associated goals using command line (mvn help:describe -Dcmd=PHASE_NAME)
+** mvn help:effective-pom
+** mvn help:describe -Dcmd=compile
+** each packaging type, will change the default lifecycle.
+
 
 **********************************************************************************************************
 **********************************************************************************************************
@@ -88,4 +107,9 @@ Maven Archetypes
 - we have a lot of archetypes using DarchetypeArtifactId such (maven-archetype-quickstart, maven-archetype-webapp)
 - the package name will be the same as the groupId
 - Creating project manually is a tedious Task.
+
+
+
+
+
 **********************************************************************************************
