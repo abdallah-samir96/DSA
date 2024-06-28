@@ -1,0 +1,11 @@
+- Maven will download dependencies from remote Repository to /users/user/.m2 directory
+- After then will read the dependency from local Repository
+- The dependencies will include (jar file(classes), sources, documentations, checksum files)
+- mvn dependency:tree to get all dependency our project depends on.
+- if there is more than one dependency with the same name, maven will use maven mediation to get only one.
+- The maven mediation may cause errors in case of different versions in dependencies it depend on.
+- scopes in dependencies are (compile, runtime, test, system, import, provided)
+- <optional>true<optional> if i need to use dependency and the project depend on me must write it if he need it.
+- Example if i made a hibernates library here i will depend on all database drivers, so i will make all of them
+  optional, so the project depend on me should only determine the needed driver not include all drivers.
+-
