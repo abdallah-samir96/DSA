@@ -16,3 +16,7 @@
     - Apache Archive
 
 - We can define specific repository for maven to search the artifacts on it.
+
+
+********************************
+mvn help:effective-pom

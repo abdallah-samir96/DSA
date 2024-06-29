@@ -1,0 +1,5 @@
+- Hashing is transformation of specific text into fixed size text.
+
+- Hash function takes input and output fixed size string.
+- Array searching is time is O(1) because the array elements in continues location
+-

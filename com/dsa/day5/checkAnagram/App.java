@@ -5,10 +5,18 @@ import java.util.Arrays;
 public class App {
     public static void main(String[] args) {
 
-        System.out.println(checkAnagram("abd", "dba"));
+
+        System.out.println(checkAnagram("aca", "abb"));
+        System.out.println("************************");
         System.out.println(isAnagram("abc", "bba"));
+        System.out.println("************************");
+        System.out.println(isAnagram("aca", "abb"));
 
     }
+    /*
+    * this wa not works in all cases aca, abb will be anagram but this is not right
+    *
+    * */
     private static boolean checkAnagram(String first, String second) {
         if(first.length() != second.length()) {
             return false;
