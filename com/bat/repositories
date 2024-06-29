@@ -8,4 +8,11 @@
 - <optional>true<optional> if i need to use dependency and the project depend on me must write it if he need it.
 - Example if i made a hibernates library here i will depend on all database drivers, so i will make all of them
   optional, so the project depend on me should only determine the needed driver not include all drivers.
--
+
+*****************************************
+- Repository Manager acts as a proxy to remote repositories
+- We can push our own artifacts into remote repositories such as
+    - Nexus
+    - Apache Archive
+
+- We can define specific repository for maven to search the artifacts on it.
