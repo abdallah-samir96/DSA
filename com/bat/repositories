@@ -8,15 +8,37 @@
 - <optional>true<optional> if i need to use dependency and the project depend on me must write it if he need it.
 - Example if i made a hibernates library here i will depend on all database drivers, so i will make all of them
   optional, so the project depend on me should only determine the needed driver not include all drivers.
-
 *****************************************
 - Repository Manager acts as a proxy to remote repositories
 - We can push our own artifacts into remote repositories such as
     - Nexus
     - Apache Archive
-
 - We can define specific repository for maven to search the artifacts on it.
-
-
 ********************************
 mvn help:effective-pom
+*************************************************
+Plugins
+- All work by maven is based on plugins
+- There is 2 types of plugins
+    - build plugins which used in build and includes in <build> element
+    - reporting plugins which used in reporting ans site generation and includes in <reporting> element
+
+- Most of time we use the build plugins.
+<build>
+<finalName>jarFile</finalName>   => this is the jar file name instead of used from artifact-version.jar
+<plugins>
+    - here we add the plugin
+</plugins>
+</build>
+- To display more info about specific goal inside plugin
+- mvn clean:help -Dgoal=clean -Ddetail=true
+- Some of plugins needed dependencies, so there is element <dependencies> inside the plugins to add dependency that the plugin depends on.
+
+- mvn help:describe -Dcmd=compile
+- mvn help:describe -Dcmd=compiler:compile
+- mvn dependency:analyze -> this goal will show all unused dependencies.
+- mvn dependency:tree    ->
+- Fat jar is a jar that contains all jars that depend on.
+- thin jar is only jar contains .class files of its own.
+- jar file created by maven is not executable Jar.
+- mvn dependency:copy-dependencies will extract all dependencies into the target directory as jar files.
