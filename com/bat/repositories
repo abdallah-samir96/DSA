@@ -59,6 +59,7 @@ Plugins
 - interpolation -> evaluate the expression for example ${example.version}
 
 - Bandwidth refers to the maximum amount of data that can be transmitted over a network connection within a given period of time.
- It is commonly expressed in bits per second (bps) or a
- higher unit such as kilobits per second (Kbps), megabits per second (Mbps), or gigabits per second (Gbps).
--
+  It is commonly expressed in bits per second (bps) or a
+  higher unit such as kilobits per second (Kbps), megabits per second (Mbps), or gigabits per second (Gbps).
+- Plugins are used by Maven.
+- Maven use the effective-pom not our pom.
