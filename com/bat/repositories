@@ -42,3 +42,23 @@ Plugins
 - thin jar is only jar contains .class files of its own.
 - jar file created by maven is not executable Jar.
 - mvn dependency:copy-dependencies will extract all dependencies into the target directory as jar files.
+*********************************************************************************************************************
+- Effective POM is merge POM + super POM.
+- Shade Plugin is used to make executable fat jar.
+- Properties In Maven
+- Built-in properties
+- ${project.artifactId} -> will resolve it.
+- ${settings.ayThing} ->  to get from settings.xml
+- ${env.PATH} -> will resolve it.
+- ${env.JAVA_HOME}
+- User Defined
+<properties>
+    <junit.version>15</junit.version>
+</properties>
+
+- interpolation -> evaluate the expression for example ${example.version}
+
+- Bandwidth refers to the maximum amount of data that can be transmitted over a network connection within a given period of time.
+ It is commonly expressed in bits per second (bps) or a
+ higher unit such as kilobits per second (Kbps), megabits per second (Mbps), or gigabits per second (Gbps).
+-
