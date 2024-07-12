@@ -1,0 +1,9 @@
+- Reactive Programming: Java reactive programming refers to a programming paradigm that focuses on building responsive and scalable applications,
+  that can handle concurrent and asynchronous tasks efficiently.
+
+- Includes characteristics such as responsiveness, elasticity, resilience, and message-driven communication.
+- Reactive programming is often implemented using libraries such as Reactive Streams, Project Reactor, and RxJava.
+- These libraries allow developers to handle streams of data and events asynchronously, using concepts such as Observables, Observers,
+  and Streams, and applying operators for processing and transforming data in a reactive and non-blocking manner.
+- Some popular frameworks and libraries that leverage reactive programming in Java include Spring WebFlux, Vert.x.
+-
