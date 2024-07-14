@@ -7,7 +7,8 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(null instanceof String);
-        var result = get2Sums(new int[]{1,2,3,5}, 9);
+        int sum = 9;
+        var result = get2Sums(new int[]{1,2,3,5}, sum);
         System.out.println(Arrays.toString(result));
     }
 
