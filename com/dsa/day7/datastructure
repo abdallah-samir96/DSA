@@ -1,8 +1,8 @@
 - You should learn, how to build DS and how to use them.
 - in C++ provide STL(Standard Template Library) library to provide ready data structures.
-
+- C++ in high level languages, it is low level.
+- C++, OOP,
 - LinkedList
     - List of Nodes by Pointers.
     - LinkedList is a dynamic Array.
     - Losing pointers or weak handling will causing memory leak(in c, c++), in Java GC will delete them.
-    -

@@ -1,16 +1,24 @@
 package com.dsa.day7;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class App {
 
 
     public static void main(String[] args) {
-        System.out.println(null instanceof String);
-        int sum = 9;
-        var result = get2Sums(new int[]{1,2,3,5}, sum);
-        System.out.println(Arrays.toString(result));
+        if(args.length > 0) {
+            System.out.println(null instanceof String);
+            int sum = 9;
+            var result = get2Sums(new int[]{1, 2, 3, 5}, sum);
+            System.out.println(Arrays.toString(result));
+        }
+
+        System.out.println(getFirstNonRepeatableCharacter("aaaL"));
+
     }
+
 
     /**
      * The array is sorted
@@ -33,4 +41,16 @@ public class App {
         return indexes;
     }
 
+    private static char getFirstNonRepeatableCharacter(String plain) {
+        Map<Character, Integer> map = new HashMap<>();
+        for(int i = 0; i < plain.length(); ++i) {
+            map.merge(plain.charAt(i), 1, Integer::sum);
+        }
+        for(int i = 0; i < plain.length(); ++i) {
+            if(map.get(plain.charAt(i)) == 1){
+                return plain.charAt(i);
+            }
+        }
+        throw new RuntimeException("Not Found Exception!!!!");
+    }
 }
