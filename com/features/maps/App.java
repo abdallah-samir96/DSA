@@ -4,6 +4,7 @@ import java.util.*;
 
 public class App {
     public static void main(String[] args) {
+        System.out.println("Hello");
         Map<Character, Integer> map = new HashMap<>();
         String plain = "AAABNBAXCVL";
         for(int x = 0; x < plain.length(); ++x) {
